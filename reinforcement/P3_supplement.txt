@@ -6,16 +6,46 @@
 
 Answer the supplemental questions here! Make sure you follow the format if it is asked
 Q1#######################
-QS1.1: 
+QS1.1: I iterated through all possible actions aviable for the given state
+        for each state:
+        if that state is terminal, teturns none,
+        else computeed Q-value and kept track of the action with 
+        highest Q-value.
 
-QS1.2:
+QS1.2: First initialized Q-value to 0 and iterated through all possible next states.
+        for each state: I added the product of the transition probability 
+        and the sum of the immediate reward and the discounted value 
+        of the next state to the Q-value. 
+        The final Q-value represents the expected utility of taking the given action in the given state.
+        
 
 Q3#######################
 
 QS3.1: 
+    (a): low discount rate makes the agent short sighted, favoring immediate rewards, thereby favoring immediate rewards. 
+    0 noise ensure agent move determinstically. 
+    Significant negative living reward pushes agent ending the episode quickly dispate the risk
+    
+    (b)low discount rate favorates immeidate rewards.
+    some noise and less negative living reward encourages the agent to avoid risky paths and less urgency
+
+    (c) high discount factor makes the agent far sighted. 
+    0 noise allows agent confident in navigating closer to the cliff
+    negative living reward ensure agent wants to end
+
+    (d)here, increasing the noise and less negative living reward will balance
+    agent's approach, making it consider safer paths without falling off
+
+    (e)a extremely high living reward encourages agent to stay in the gride
+
+
 Q5#######################
 
-QS5.1:
+QS5.1: To implement Q-learning agent, I initialized Q values as 0, the agents selects actions based on an epsilon greedy strategy
+    means it choose random actions with epsilon prob for exploration and the best-known action with a prob of 1-ep for exploitation.
+    The update method adjust Q-values using the Q-learning formula.
+    The getAction and computeActionFromQVlaues, and computeValuesFromQValues are used to
+    determin the current policy and values of the states based on the learned Q-values.
 
 QS5.2 [optional]:
 
