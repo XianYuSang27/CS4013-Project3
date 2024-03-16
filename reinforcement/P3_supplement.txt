@@ -56,7 +56,7 @@ QS6.2 [optional]:
 
 
 Q7#######################
-QS7.1
+QS7.1: 'NOT POSSIBLE'
 
 
 
