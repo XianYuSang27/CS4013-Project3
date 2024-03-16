@@ -63,7 +63,7 @@ def question8():
     answerEpsilon = 0.05
     answerAlpha = 0.2
     answerGamma = 0.8
-    return answerEpsilon, answerAlpha, answerGamma
+    return 'NOT POSSIBLE'
     # If not possible, return 'NOT POSSIBLE'
 
 if __name__ == '__main__':
