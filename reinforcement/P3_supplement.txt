@@ -45,12 +45,13 @@ QS5.1: To implement Q-learning agent, I initialized Q values as 0, the agents se
     means it choose random actions with epsilon prob for exploration and the best-known action with a prob of 1-ep for exploitation.
     The update method adjust Q-values using the Q-learning formula.
     The getAction and computeActionFromQVlaues, and computeValuesFromQValues are used to
-    determin the current policy and values of the states based on the learned Q-values.
+    determine the current policy and values of the states based on the learned Q-values.
 
 QS5.2 [optional]:
 
 Q6#######################
-QS6.1:
+QS6.1: Yes, because the simulation with 0.9 epsilon explored a lot, resulting in a negative return after 100 episodes. The simulation 
+        with 0.1 epsilon explored a lot less and it had a positive return because it followed the steps with higher Q-values more consistently.
 QS6.2 [optional]:
 
 
